@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  upload-deception-101:
+    build: .
+    image: athack-ctf/chall2025-upload-deception-101:latest
+    ports:
+      - "2025:80"

@@ -1,0 +1,22 @@
+name: "Upload Deception 101"
+author: "Dana"
+category: Web
+description: |
+  This upload form claims to only accept images, but can you find a way to deceive it? Bypass the validation and reveal the hidden flag.
+
+value: 50
+
+type: standard
+
+flags:
+  - type: "static"
+    content: "ATHACKCTF{f4ke_it_till_y0u_m4ke_it}"
+    data: "case_insensitive"
+
+tags:
+  - beginner
+  - http
+
+state: visible
+
+version: "0.1"

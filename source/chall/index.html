@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Vulnerability Challenge</title>
+    <style>
+      /* Placeholder for future styling.*/
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #d7c6eb; /* Light purple background */
+      }
+      .container {
+        text-align: center;
+        background: #fff;
+        padding: 20px 30px;
+        border-radius: 12px;
+        box-shadow: 0 6px 10px rgba(128, 0, 128, 0.2);  /* Purple shadow */
+        border: 1px solid #d4b6ff; /* Subtle purple border */
+
+   /* styling for heading? */
+
+      }
+      input[type="file"] {
+        margin: 15px 0;
+
+        padding: 10px;
+            border: 1px solid #d4b6ff; /* Purple border */
+            border-radius: 6px;
+            background-color: #f4eaff; /* Light purple background */
+            color: #5b205b; /* Dark purple text */
+            cursor: pointer; /* clickable hand thing */
+      }
+
+
+/* styling for the flag */
+.flag-message {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: #d4b6ff; /* Light purple text color */
+    font-weight: bold;
+    background-color: #5b205b; /* Dark purple background */
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff; /* White text for readability */
+    margin-top: 30px;
+}
+.flag-message a {
+    color: #fff; /* White text for links */
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div class="align-middle">
+        <div class="container my-5 px-4">
+            <h3 class="py-5">File Upload Test</h3>
+            <p>Please upload your image. Proceed with caution! </p>
+            <form enctype='multipart/form-data' action='upload.php' method='post' class="submit">
+            <input type='file' name='file'/>
+            <button type='submit'>Upload</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
