@@ -1,20 +1,66 @@
-# Chall - Upload Deception 101
+# @HACK 2025: Upload Deception 101
 
-> In this challenge, you must bypass weak file validation to upload a non-image file disguised as an image and retrieve a flag.
+> Authored by [Dana](https://github.com/d-abous).
 
-## Type
+- **Category**: `Web`
+- **Value**: `50 points`
+- **Tags**: `beginner` `http`
 
-- [ ] **OFF**line
-- [x] **ON**line
+> This upload form claims to only accept images, but can you find a way to deceive it? Bypass the validation and reveal the hidden flag.
+> 
 
-## Designer
+## Access a dockerized instance
 
-- Dana Abousharbin
+Run challenge container using docker compose
+```
+docker compose up -d
+```
+Open below URL on your browser
+```
+http://localhost:52050/
+```
+<details>
+<summary>
+How to stop/restart challenge?
+</summary>
 
-## Description
+To stop the challenge run
+```
+docker compose stop
+```
+To restart the challenge run
+```
+docker compose restart
+```
 
-This challenge tests understanding of file upload security and how weak validation can be exploited. The hacker must upload a non-image file by simply renaming it to make the extension look like an image.
+</details>
 
-## Category
 
-- `web`
+## Reveal Flag
+
+Did you try solving this challenge?
+<details>
+<summary>
+Yes
+</summary>
+
+Did you **REALLY** try solving this challenge?
+
+<details>
+<summary>
+Yes, I promise!
+</summary>
+
+Flag: `ATHACKCTF{f4ke_it_till_y0u_m4ke_it}`
+
+</details>
+</details>
+
+
+---
+
+## About @HACK
+[@HACK](https://athackctf.com/) is an annual CTF (Capture The Flag) competition hosted by [HEXPLOIT ALLIANCE](https://hexploit-alliance.com/) and [TECHNATION](https://technationcanada.ca/) at Concordia University in Montreal, Canada.
+
+---
+[Check more challenges from @HACK 2025](https://github.com/athack-ctf/AtHackCTF-2025-Challenges).
